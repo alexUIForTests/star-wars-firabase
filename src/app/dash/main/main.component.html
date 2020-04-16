@@ -1,0 +1,15 @@
+<mat-grid-list cols="2" rowHeight="1:1">
+  <mat-grid-tile>
+    <ag-grid-angular
+      class="ag-theme-alpine"
+      [gridOptions]="gridOptions"
+      [columnDefs]="columnDefs"
+    >
+    </ag-grid-angular>
+
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-personal-info [character]="characterInput" *ngIf="isInfo"></app-personal-info>
+
+  </mat-grid-tile>
+</mat-grid-list>

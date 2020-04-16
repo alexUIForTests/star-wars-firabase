@@ -1,0 +1,13 @@
+<mat-form-field>
+  <input matInput placeholder="Name" [(ngModel)]="character.name">
+</mat-form-field>
+<mat-form-field>
+  <input matInput placeholder="species" [(ngModel)]="character.species">
+</mat-form-field>
+<mat-form-field>
+  <input matInput placeholder="spaceships" [(ngModel)]="character.spaceships">
+</mat-form-field>
+<mat-form-field>
+  <input matInput placeholder="movies" [(ngModel)]="character.movies">
+</mat-form-field>
+<button mat-fab color="accent" (click)="add(character)">Add</button>
